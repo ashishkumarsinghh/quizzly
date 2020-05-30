@@ -1,0 +1,53 @@
+@import "variables";
+
+body {
+  font: 100% $font-stack;
+  background-color: $primary-color;
+  color: $font-color;
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 7vh;
+    padding-bottom: 5vh;
+    border-bottom: solid #bfbfbf 1px;
+  }
+  .question {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 8vh;
+    border-radius: 1vh;
+    padding: 5vh 2vh;
+    border: solid #40383c 1px;
+    .questionTxt {
+      color: $question-txt;
+      width: 100%;
+      font-size: 3vh;
+      font-weight: bolder;
+      margin-bottom: 3vh;
+      color: white;
+      .num {
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        border-radius: 50%;
+        padding: 3px 3px;
+        border: solid white 1px;
+      }
+    }
+    .choices {
+      display: flex;
+      flex-direction: row;
+      .choice {
+        margin-right: 3vh;
+        padding: 1vh 1vh;
+        border: solid rgb(126, 126, 126) 1px;
+        border-radius: 4px;
+        &:hover {
+          background-color: white;
+          color: black;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
