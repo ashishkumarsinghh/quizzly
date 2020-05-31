@@ -7,7 +7,7 @@ function Question(props) {
         <span className="num"> &nbsp;{props.idx + 1}. </span>
         &nbsp;{props.questionTxt}
       </div>
-      <Choices choices={props.choices} />
+      <Choices choices={props.choices} hc={props.hc} qId={props.idx} />
     </div>
   );
 }
